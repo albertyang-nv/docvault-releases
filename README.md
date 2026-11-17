@@ -34,3 +34,14 @@ Get-FileHash -Algorithm SHA256 .\DocVault-Setup-<version>.exe
 
 `latest.json` is the update feed that installed copies read. `release-manifest.json`
 records the commit and lockfile hash the build came from.
+
+## About the "Source code" assets
+
+Every GitHub release automatically carries **Source code (zip)** and
+**Source code (tar.gz)**. GitHub generates those from this repository and they
+cannot be removed.
+
+They are **not** the DocVault application source. This repository holds only
+this README and the published build artifacts, so those archives contain just
+this file. DocVault's source lives in a separate private repository and is not
+published here.
